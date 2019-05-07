@@ -123,3 +123,43 @@ main #container {
 #container #equals:active {
     box-shadow: 0 2px 0 #155d34;
 }
+
+@media only screen and (max-width: 400px) {
+    header {
+        padding: 28px 0;
+    }
+
+    header h1 {
+        font-size: 36px;
+        letter-spacing: 2px;
+    }
+
+    main {
+        padding: 40px 0;
+    }
+
+    main #container {
+        padding: 16px;
+    }
+
+    #container .row:not(:last-child) {
+        margin-bottom: 7px;
+    }
+
+    #container input,
+    #container button {
+        font-size: 16px;
+    }
+
+    #container input {
+    height: 60px;
+    margin-right: 7px;
+    padding-right: 8px;
+    }
+
+    #container button {
+    height: 60px;
+    margin-right: 7px;
+    width: 60px;
+    }
+}
