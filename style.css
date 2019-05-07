@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #222;
+    height: 100vh;
+}
+
+header {
+    background-color: #333;
+    padding: 40px 0;
+}
+
+header h1 {
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(to right bottom, #fff, #777);
+    color: transparent;
+    font-size: 40px;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+main {
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    padding: 60px 0;
+}
+
+main #container {
+    background-color: #333;
+    box-shadow: 0 5px 5px #111;
+    padding: 20px;
+}
+
+#container .row {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+#container .row:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+#container input,
+#container button {
+    font-size: 20px;
+}
+
+#container input:focus,
+#container button:focus {
+    outline: none;
+}
+
+#container input {
+    background-color: #222;
+    border: 2px solid #aaa;
+    color: #aaa;
+    flex-grow: 1;
+    height: 80px;
+    margin-right: 9px;
+    padding-right: 10px;
+    text-align: right;
+}
+
+#container button {
+    background-color: #222;
+    border: none;
+    box-shadow: 0 3px 0 #111;
+    color: #aaa;
+    height: 80px;
+    margin-right: 9px;
+    width: 80px;
+}
+
+#container button:active {
+    box-shadow: 0 2px 0 #111;
+    transform: translateY(1px);
+}
+
+#container #clear,
+#container .operator,
+#container #equals {
+    color: #111;
+}
+
+#container #clear,
+#container .operator {
+    margin-right: 0;
+}
+
+#container #clear {
+    background-color: #e74c3c;
+    box-shadow: 0 3px 0 #8a1c11;
+}
+
+#container #clear:active {
+    box-shadow: 0 2px 0 #8a1c11;
+}
+
+#container .operator {
+    background-color: #999;
+    box-shadow: 0 3px 0 #555;
+}
+
+#container .operator:active {
+    box-shadow: 0 2px 0 #555;
+}
+
+#container #equals {
+    background-color: #2ecc71;
+    box-shadow: 0 3px 0 #155d34;
+}
+
+#container #equals:active {
+    box-shadow: 0 2px 0 #155d34;
+}
