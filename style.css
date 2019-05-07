@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    font-weight: 300;
     margin: 0;
     padding: 0;
 }
@@ -21,7 +22,6 @@ header h1 {
     background-image: linear-gradient(to right bottom, #fff, #777);
     color: transparent;
     font-size: 40px;
-    font-weight: 300;
     letter-spacing: 2px;
     text-align: center;
     text-transform: uppercase;
@@ -66,8 +66,10 @@ main #container {
     border-right-width: 0;
     color: #999;
     flex-grow: 1;
+    font-size: 22px;
+    font-weight: 300;
     height: 80px;
-    padding-right: 10px;
+    padding-right: 14px;
     text-align: right;
 }
 
@@ -98,7 +100,7 @@ main #container {
 }
 
 #container #clear {
-    background-color: #e74c3c;
+    background-color: #e95a4b;
     border: 1px solid #999;
     border-left-width: 0;
     box-shadow: none;
@@ -155,7 +157,7 @@ main #container {
 
     #container input {
     height: 60px;
-    padding-right: 8px;
+    padding-right: 10px;
     }
 
     #container button {
