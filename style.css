@@ -62,7 +62,7 @@ main #container {
 
 #container input {
     background-color: #222;
-    border: 1px solid #555;
+    border: 1px solid #999;
     border-right-width: 0;
     color: #999;
     flex-grow: 1;
@@ -99,7 +99,7 @@ main #container {
 
 #container #clear {
     background-color: #e74c3c;
-    border: 1px solid #555;
+    border: 1px solid #999;
     border-left-width: 0;
     box-shadow: none;
 }
