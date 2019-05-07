@@ -21,7 +21,7 @@ header h1 {
     background-image: linear-gradient(to right bottom, #fff, #777);
     color: transparent;
     font-size: 40px;
-    font-weight: lighter;
+    font-weight: 300;
     letter-spacing: 2px;
     text-align: center;
     text-transform: uppercase;
