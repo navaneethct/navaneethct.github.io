@@ -62,11 +62,11 @@ main #container {
 
 #container input {
     background-color: #222;
-    border: 2px solid #aaa;
-    color: #aaa;
+    border: 1px solid #999;
+    border-right-width: 0;
+    color: #999;
     flex-grow: 1;
     height: 80px;
-    margin-right: 9px;
     padding-right: 10px;
     text-align: right;
 }
@@ -75,9 +75,8 @@ main #container {
     background-color: #222;
     border: none;
     box-shadow: 0 3px 0 #111;
-    color: #aaa;
+    color: #999;
     height: 80px;
-    margin-right: 9px;
     width: 80px;
 }
 
@@ -92,18 +91,16 @@ main #container {
     color: #111;
 }
 
-#container #clear,
-#container .operator {
-    margin-right: 0;
-}
-
 #container #clear {
     background-color: #e74c3c;
-    box-shadow: 0 3px 0 #8a1c11;
+    border: 1px solid #999;
+    border-left-width: 0;
+    box-shadow: none;
 }
 
 #container #clear:active {
-    box-shadow: 0 2px 0 #8a1c11;
+    box-shadow: none;
+    transform: none;
 }
 
 #container .operator {
@@ -131,7 +128,6 @@ main #container {
 
     header h1 {
         font-size: 36px;
-        letter-spacing: 2px;
     }
 
     main {
@@ -153,13 +149,11 @@ main #container {
 
     #container input {
     height: 60px;
-    margin-right: 7px;
     padding-right: 8px;
     }
 
     #container button {
     height: 60px;
-    margin-right: 7px;
     width: 60px;
     }
 }
