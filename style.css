@@ -37,7 +37,7 @@ main {
 main #container {
     background-color: #333;
     box-shadow: 0 5px 5px #111;
-    padding: 20px;
+    padding: 16px;
 }
 
 #container .row {
@@ -144,7 +144,7 @@ main #container {
     }
 
     main #container {
-        padding: 16px;
+        padding: 12px;
     }
 
     #container .row:not(:last-child) {
