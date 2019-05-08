@@ -40,7 +40,7 @@ const calculate = () => {
             default:
         }
     }
-}
+};
 
 clear.addEventListener("click", allClear);
 
