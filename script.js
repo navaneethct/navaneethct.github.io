@@ -27,15 +27,19 @@ const calculate = () => {
         switch (operator) {
             case "+":
                 result = Number((Number(firstNumber) + Number(secondNumber)).toFixed(3));
+                screen.value += ` = ${result}`;
                 break;
             case "-":
                 result = Number((Number(firstNumber) - Number(secondNumber)).toFixed(3));
+                screen.value += ` = ${result}`;
                 break;
             case "*":
                 result = Number((Number(firstNumber) * Number(secondNumber)).toFixed(3));
+                screen.value += ` = ${result}`;
                 break;
             case "/":
                 result = Number((Number(firstNumber) / Number(secondNumber)).toFixed(3));
+                screen.value += ` = ${result}`;
                 break;
             default:
         }
@@ -103,7 +107,4 @@ document.querySelectorAll(".operator").forEach((operatorButton) => {
     });
 });
 
-equalsButton.addEventListener("click", () => {
-    calculate();
-    screen.value += ` = ${result}`;
-});
+equalsButton.addEventListener("click", calculate);
