@@ -40,6 +40,15 @@ main #container {
     padding: 20px;
 }
 
+.clearfix:after {
+    clear: both;
+    content: " ";
+    display: block;
+    font-size: 0;
+    height: 0;
+    visibility: hidden;
+}
+
 #container .row:not(:last-child) {
     margin-bottom: 9px;
 }
@@ -159,13 +168,4 @@ main #container {
         margin-right: 5px;
         width: 60px;
     }
-}
-
-.clearfix:after {
-    clear: both;
-    content: " ";
-    display: block;
-    font-size: 0;
-    height: 0;
-    visibility: hidden;
 }
