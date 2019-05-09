@@ -21,28 +21,25 @@ const allClear = () => {
 };
 
 const calculate = () => {
-    if (result === "" && ![" ", "+", "-"].includes(screen.value[screen.value.length - 1])) {
+    if (operator && result === "" && ![" ", "+", "-"].includes(screen.value[screen.value.length - 1])) {
         secondNumber = screen.value.substring(firstNumber.length + 3);
 
         switch (operator) {
             case "+":
                 result = Number((Number(firstNumber) + Number(secondNumber)).toFixed(3));
-                screen.value += ` = ${result}`;
                 break;
             case "-":
                 result = Number((Number(firstNumber) - Number(secondNumber)).toFixed(3));
-                screen.value += ` = ${result}`;
                 break;
             case "*":
                 result = Number((Number(firstNumber) * Number(secondNumber)).toFixed(3));
-                screen.value += ` = ${result}`;
                 break;
             case "/":
                 result = Number((Number(firstNumber) / Number(secondNumber)).toFixed(3));
-                screen.value += ` = ${result}`;
                 break;
             default:
         }
+        screen.value += ` = ${result}`;
     }
 };
 
