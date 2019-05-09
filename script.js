@@ -82,7 +82,7 @@ document.querySelectorAll(".operator").forEach((operatorButton) => {
             operator = operatorButton.dataset.operator;
             result = "";
             screen.value = `${firstNumber} ${operatorButton.textContent} `;
-        } else if (operator && ![" ", "+", "-"].includes(screen.value[screen.value.length - 1])) {
+        } else if (operator && ![" ", "+", "-", "."].includes(screen.value[screen.value.length - 1])) {
             calculate();
             isFloat = false;
             signOn = false;
