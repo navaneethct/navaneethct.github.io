@@ -49,6 +49,11 @@ document.querySelectorAll(".number").forEach((numberButton) => {
     numberButton.addEventListener("click", () => {
         if (screen.value === "0") {
             screen.value = numberButton.textContent;
+        } else if ([" 0", "+0", "-0"].includes(screen.value.substring(screen.value.length - 2))
+                && numberButton.textContent === "0") {
+        } else if ([" 0", "+0", "-0"].includes(screen.value.substring(screen.value.length - 2))
+                && numberButton.textContent !== "0") {
+            screen.value = screen.value.substring(0, screen.value.length - 1) + numberButton.textContent;
         } else if (result || result === 0) {
             allClear();
             screen.value = numberButton.textContent;
