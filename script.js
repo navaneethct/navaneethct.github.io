@@ -39,7 +39,7 @@ const calculate = () => {
                 break;
             default:
         }
-        screen.value += ` = ${result}`;
+        screen.value = result;
     }
 };
 
